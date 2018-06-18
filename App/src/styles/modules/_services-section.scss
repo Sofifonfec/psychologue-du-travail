@@ -6,7 +6,7 @@
 		justify-content: center;
 		color: #fff;
 
-		@include atSmall {
+		@include atMedium {
 			justify-content: space-between;
 		}
 	}
@@ -16,26 +16,25 @@
 		width: 100%;
 		padding: 0.4em;
 
-		@include atXSmall {
+		@media (min-width: 500px) {
 			width: 50%;
-			height: 320px;
+			
 		}
 
-		@include atSmall {
+		@include atMedium {
 			width: 25%;
+			min-height: 320px;
 		}
 
 		&--third {
 			width: 100%;
 
-			@include atXSmall {
+			@media (min-width: 500px) {
 			width: 50%;
-			height: 320px;
 			}
 
-			@include atSmall {
+			@include atMedium {
 			width: 30%;
-			height: 320px;
 			}
 		}
 	}
@@ -43,21 +42,39 @@
 	&__list-content {
 		display: flex;
 		flex-direction: column;
-		padding: 1em;
+		padding: 2em;
 		width: 100%;
 		background-color: rgba($mainBlue, .7);
 		text-align: center;
+
+		@include atSmall {
+			padding: 2em;
+		}
+
+		@include atMedium {
+			padding: 1em;
+		}
 	}
 
 	&__list-title {
 		font-weight: 500;
-		flex: 1 0 auto;
+		margin-bottom: 0;
+		padding-bottom: 10px;
+		font-size: 1.125rem;
+		line-height: 1.1em;
+		letter-spacing: .05em;
+		flex: 1;
+		text-transform: uppercase;
 	}
 
 	&__list-txt {
-		flex: 1 0 auto;
-		font-size: .9rem;
+		flex: 2;
 		text-align: justify;
 		padding-bottom: 1em;
+		line-height: 1.6em;
+	}
+
+	&__list-btn {
+		margin-bottom: 10px;
 	}
 }

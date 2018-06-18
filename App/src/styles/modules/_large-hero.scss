@@ -40,6 +40,8 @@
 		color: $mainOrange;
 		max-width: 70rem;
 		font-size: .9rem;
+		line-height: 1.65em;
+		letter-spacing: .09em;
 		padding-left: 10px;
 		padding-right: 10px;
 		margin-left: auto;
@@ -51,10 +53,6 @@
 
 		@include atSmall {
 			font-size: 1.2rem;
-		}
-
-		@include atMedium {
-			font-size: 1.3rem;
 		}
 	}
 }
