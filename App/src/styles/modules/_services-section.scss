@@ -1,0 +1,63 @@
+.services {
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		color: #fff;
+
+		@include atSmall {
+			justify-content: space-between;
+		}
+	}
+
+	&__list-item {
+		display: flex;
+		width: 100%;
+		padding: 0.4em;
+
+		@include atXSmall {
+			width: 50%;
+			height: 320px;
+		}
+
+		@include atSmall {
+			width: 25%;
+		}
+
+		&--third {
+			width: 100%;
+
+			@include atXSmall {
+			width: 50%;
+			height: 320px;
+			}
+
+			@include atSmall {
+			width: 30%;
+			height: 320px;
+			}
+		}
+	}
+
+	&__list-content {
+		display: flex;
+		flex-direction: column;
+		padding: 1em;
+		width: 100%;
+		background-color: rgba($mainBlue, .7);
+		text-align: center;
+	}
+
+	&__list-title {
+		font-weight: 500;
+		flex: 1 0 auto;
+	}
+
+	&__list-txt {
+		flex: 1 0 auto;
+		font-size: .9rem;
+		text-align: justify;
+		padding-bottom: 1em;
+	}
+}

@@ -1,0 +1,139 @@
+.site-header {
+	position: absolute; 
+	transition: background-color .3s ease-out;
+	width: 100%;
+	z-index: 2;
+	padding: 10px 0;
+
+	@include atMedium {
+		background-color: rgba($mainBlue, .7);
+		position: fixed;
+	}
+
+	&__logo {
+		position: absolute;
+		top: 0;
+		left: auto;
+		transition: transform .3s ease-out;
+		color: #fff;
+		font-weight: 500;
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		padding: 15px 0 0 5px;
+
+		&--orange {
+			color: $mainOrange;
+		}
+
+		@include atXSmall {
+			font-size: 1.4rem;
+			padding: 15px 0 0 30px;
+		}
+		
+		@include atMedium {
+			top: 50%;
+			transform: translateY(-50%);
+			padding: 0;
+		}
+
+		@include atTiny {
+			font-size: 1.1rem;
+		}
+	}
+
+	&__btn-container {
+
+		@include atMedium {
+			float: right;
+			margin-top: 4px;
+		}
+	}
+
+/* ------- START ICON MENU FOR SMALL SCREENS ------------------------- */
+	&__menu-icon {
+		width: 20px;
+		height: 19px;
+		position: absolute;
+		z-index: 10;
+		top: 20px;
+		right: 20px;
+		
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 20px;
+			height: 3px;
+			background-color: #FFF;
+			transform-origin: 0 0;
+			transition: transform .3s ease-out;
+		}
+		
+		&__middle {
+			position: absolute;
+			top: 8px;
+			left: 0;
+			width: 20px;
+			height: 3px;
+			background-color: #FFF;
+			transition: all .3s ease-out;
+			transform-origin: 0 50%;
+		}
+		
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 20px;
+			height: 3px;
+			background-color: #FFF;
+			transform-origin: 0 100%;
+			transition: transform .3s ease-out;
+		}
+		
+		@include atMedium {
+			display: none;   
+		}
+	}
+	
+	&__menu-icon--close-x {
+		&::before {
+			transform: rotate(45deg) scaleX(1.25);
+		}
+		
+		.site-header__menu-icon__middle { 
+			opacity: 0;
+			transform: scaleX(0);
+		}
+		
+		&::after {
+			transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+		}
+	}
+/* ------- END ICON MENU FOR SMALL SCREENS -------------------------- */	
+
+	&__menu-content {
+		opacity: 0;
+		transform: scale(1.2);
+		transition: all .3s ease-out;
+		position: relative; 
+		z-index: -10;
+		padding-top: 90px;
+		text-align: center;
+		
+		@include atMedium {
+			opacity: 1;
+			z-index: 1;
+			padding-top: 0;
+			transform: scale(1);
+		}
+
+		&--is-visible { 
+			opacity: 1;
+			z-index: 1;
+			transform: scale(1);
+		}
+	}	
+}
