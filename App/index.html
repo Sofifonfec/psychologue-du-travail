@@ -21,7 +21,7 @@
 <body>
 	<header class='site-header'>
 		<div class="wrapper">
-			<div class="site-header__logo">Adeline <span class="site-header__logo--orange">Courseille</span></div>
+			<a href="#" class="site-header__logo">Adeline<span class="site-header__logo--orange"> Courseille</span></a>
 			
 			<div class="site-header__menu-icon">
 				<div class="site-header__menu-icon__middle"></div>
@@ -60,53 +60,53 @@
 					<div class="services__list-content">
 						<h3 class="services__list-title">Santé au travail</h3>
 						<p class="services__list-txt">Consultation souffrance au travail: Stress, Usure, Burn Out...</p>
-						<a href="#" class="btn services__list-btn">Plus d'info</a>
+						<a href="#" class="btn services__list-btn">Voir plus</a>
 					</div>
 				</li>
 				<li class="services__list-item">
 					<div class="services__list-content">
 						<h3 class="services__list-title">Accompagnement emploi</h3>
-						<p class="services__list-txt">Rédaction CV, lettre de motivation, utilisation des réseaux sociaux, préparation d'entretien</p>
-						<a href="#" class="btn services__list-btn">Plus d'info</a>
+						<p class="services__list-txt">Rédaction CV, lettre de motivation, préparation d'entretien</p>
+						<a href="#" class="btn services__list-btn">Voir plus</a>
 					</div>
 				</li>
 				<li class="services__list-item">
 					<div class="services__list-content">
 						<h3 class="services__list-title">Reconversion / transition</h3>
 						<p class="services__list-txt">Conseil carrière, Bilan de compétences</p>
-						<a href="#" class="btn services__list-btn">Plus d'info</a>
+						<a href="#" class="btn services__list-btn">Voir plus</a>
 					</div>
 				</li>
 				<li class="services__list-item">
 					<div class="services__list-content">
 						<h3 class="services__list-title">Orientation</h3>
-						<p class="services__list-txt">Accompagnement des jeunes dans leurs choix d'orientation. Collégiens, lycéens et étudiants</p>
-						<a href="#" class="btn services__list-btn">Plus d'info</a>
+						<p class="services__list-txt">Accompagnement des jeunes dans leurs choix d'orientation.</p>
+						<a href="#" class="btn services__list-btn">Voir plus</a>
 					</div>
 				</li>
 			</ul>
 
-			<h2 class="section-title section-title--blue section-title--extra-pt">Services aux <span class="section-title--bold">Entreprises/Organisations</span></h2>
+			<h2 class="section-title section-title--blue section-title--extra-pt">Services aux <span class="section-title--bold">Entreprises & Organisations</span></h2>
 			<ul class="services__list">
 				<li class="services__list-item services__list-item--third">
 					<div class="services__list-content">
-						<h3 class="services__list-title">Evaluation des ressources psycho-sociales</h3>
+						<h3 class="services__list-title">RPS</h3>
 						<p class="services__list-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad minus eius, veritatis.</p>
-						<a href="#" class="btn services__list-btn">Plus d'info</a>
+						<a href="#" class="btn services__list-btn">Voir plus</a>
 					</div>
 				</li>
 				<li class="services__list-item services__list-item--third">
 					<div class="services__list-content">
 						<h3 class="services__list-title">Recrutement</h3>
-						<p class="services__list-txt">Aide à chaque étapes du processus de recrutement, de l'analyse du besoin ) l'intégration du candidat</p>
-						<a href="#" class="btn services__list-btn">Plus d'info</a>
+						<p class="services__list-txt">Aide à chaque étape du processus de recrutement</p>
+						<a href="#" class="btn services__list-btn">Voir plus</a>
 					</div>
 				</li>
 				<li class="services__list-item services__list-item--third">
 					<div class="services__list-content">
 						<h3 class="services__list-title">Accompagnement collectif</h3>
 						<p class="services__list-txt">Animation de groupe: analyse de pratique, groupe d'autoconfrontation croisés</p>
-						<a href="#" class="btn services__list-btn">Plus d'info</a>
+						<a href="#" class="btn services__list-btn">Voir plus</a>
 					</div>
 				</li>
 			</ul>	
@@ -128,14 +128,41 @@
 		<div class="wrapper">
 			<h2 class="section-title section-title--blue" id="contact" data-matching-link="#contact-link">Contact</h2>
 			<div class="footer row">
+				<div class="contact-form row__8">
+					<form action="" method="">
+						<h3 class="contact-form__title">Formulaire de contact</h3>
+						<p class="contact-form__para">Pour prendre rdv ou pour plus d'information merci de remplir le formulaire ci-dessous ou de me contacter au 06.11.11.11.11</p>
+						<div class="contact-form__textbox">
+							<input class="contact-form__input" type="text" name="name" placeholder="Nom complet">
+						</div>
+						<div class="contact-form__textbox">
+							<input class="contact-form__input" type="text" name="mail" placeholder="Email">
+						</div>
+						<div class="contact-form__textbox">
+							<select class="contact-form__input contact-form__select" name="subject" placeholder="Sujet">
+								<option value="" selected="selected" disabled="disabled">Sujet</option>
+								<option class="contact-form__option" value="sante au travail">Santé au travail</option>
+								<option class="contact-form__option" value="accompagnement emploi">Accompagnement Emploi</option>
+								<option class="contact-form__option" value="reconversion">Reconversion</option>
+								<option class="contact-form__option" value="orientation">Orientation</option>
+								<option class="contact-form__option" value="rps">RPS</option>
+								<option class="contact-form__option" value="recrutement">Recrutement</option>
+								<option class="contact-form__option" value="accompagnement collectif">Accompagnement collectif</option>
+								<option class="contact-form__option" value="autre">Autre</option>
+							</select>
+						</div>
+						<div class="contact-form__msgbox">
+							<textarea class="contact-form__msg" name="message" placeholder="Message"></textarea>
+						</div>
+						<button class="contact-form__btn" type="submit" name="submit">Envoyer</button>
+					</form>	
+				</div>
+
 				<div class="footer__adresse row__4">
 					<h3 class="footer__title">Adresse</h3>
 					<p class="footer__para">3 chemin du petit lapin blanc, 31000 Toulouse</p>
 				</div>
-				<div class="footer__form row__8">
-					<h3 class="footer__title">Prendre rdv</h3>
-					
-				</div>
+
 			</div>
 			<div class="footer__copy">
 				<p class="footer__copy__contact">Adeline Courseille, psychologue du travail à Toulouse, Haute-Garonne. 06.11.11.11.11 | adeline.courseille@psy-toulouse.fr</p>

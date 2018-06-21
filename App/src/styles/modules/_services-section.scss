@@ -4,7 +4,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		color: #fff;
+		color: $mainBlue;
 
 		@include atMedium {
 			justify-content: space-between;
@@ -18,12 +18,11 @@
 
 		@media (min-width: 500px) {
 			width: 50%;
-			
 		}
 
 		@include atMedium {
 			width: 25%;
-			min-height: 320px;
+			
 		}
 
 		&--third {
@@ -44,8 +43,10 @@
 		flex-direction: column;
 		padding: 2em;
 		width: 100%;
-		background-color: rgba($mainBlue, .7);
+		background-color: rgba(#fff, 1);
 		text-align: center;
+		border-radius: 2px;
+		border-top: 2.5px solid rgba($mainBlue, .7);
 
 		@include atSmall {
 			padding: 2em;
@@ -54,7 +55,7 @@
 		@include atMedium {
 			padding: 1em;
 		}
-	}
+	}	
 
 	&__list-title {
 		font-weight: 500;
@@ -69,12 +70,21 @@
 
 	&__list-txt {
 		flex: 2;
-		text-align: justify;
+		text-align: center;
 		padding-bottom: 1em;
 		line-height: 1.6em;
+		color: $text;
 	}
 
 	&__list-btn {
 		margin-bottom: 10px;
+		background-color: rgba($mainOrange, .9);
+
+		&:hover {
+			background-color: #fff;
+			border: 1.5px solid $mainOrange;
+			color: $mainOrange;
+			font-weight: 600;
+		}
 	}
 }

@@ -1,0 +1,78 @@
+.contact-form {
+	width: 90%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+
+	@include atSmall {
+		width: 60%;
+	}
+
+	&__title {
+		font-weight: 500;
+		margin: 0;
+		padding-top: .3em;
+		font-size: 1.215rem;
+	}
+
+	&__para {
+		font-size: .9rem;
+	}
+
+	&__textbox {
+		width: 100%;
+		overflow: hidden;
+		padding: 8px 0;
+		margin: 8px 0;
+	}
+
+	&__input {
+		border: none;
+		outline: none;
+		background: none;
+		font-size: 1.1rem;
+		width: 100%;
+		padding: 10px;
+		background-color: #fff;
+	}
+
+	&__select {
+		color: gray;
+	}
+
+	&__option {
+		color: $text;
+	}
+
+	&__msgbox {
+		overflow: hidden;
+		padding: 8px 0;
+		margin: 8px 0;
+	}
+
+	&__msg {
+		width: 100%;
+		height: 200px;
+		border: none;
+		outline: none;
+		font-size: 1.125rem;
+		padding: 10px;
+		font-family: 'Open Sans', sans-serif;
+	}
+
+	&__btn {
+		width: 100%;
+		background: none;
+		border: 2px solid $mainOrange;
+		padding: 5px;
+		font-size: 1.125rem;
+		cursor: pointer;
+		margin: 12px 0;
+		transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+
+		&:hover {
+			background-color: $mainOrange;
+			color: #fff;
+		}
+	}
+}

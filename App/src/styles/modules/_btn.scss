@@ -1,8 +1,15 @@
 .btn {
 	background-color: $mainOrange;
 	color: #FFF;
-	padding: .4rem 1.4rem;
+	padding: .36rem 1.4rem;
 	display: inline-block;
 	font-size: 1.1rem;
 	font-weight: 500;
+	border: 1.5px solid $mainOrange;
+	transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+
+	&:hover {
+			background-color: inherit;
+			border: 1.5px solid #fff;
+	}
 }
