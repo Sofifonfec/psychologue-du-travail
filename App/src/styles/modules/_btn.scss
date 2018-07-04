@@ -12,4 +12,12 @@
 			background-color: inherit;
 			border: 1.5px solid #fff;
 	}
+
+	&--do-not-display-until-medium {
+		display: none;
+
+		@include atMedium {
+			display: inline-block;
+		}
+	}
 }

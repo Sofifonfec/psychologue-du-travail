@@ -1,91 +1,128 @@
 .services {
 
-	&__list {
+	&__container {
 		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		color: $mainBlue;
+		flex-direction: column;
 
 		@include atMedium {
 			justify-content: space-between;
+			flex-direction: row;
+		}
+
+		&--extra-pb {
+			margin-bottom: 25px;
+		}
+
+		&--extra-pt {
+			margin-top: 25px;
+			border-top: 4px solid $mainBlue;
 		}
 	}
 
-	&__list-item {
-		display: flex;
-		width: 100%;
-		padding: 0.4em;
+/** STYLING LEFT BLOCK to be flex left on medium and + screens and top centered on small screens **/
 
-		@media (min-width: 500px) {
-			width: 50%;
-		}
+	&__left-block {
+		width: 100%;
+		display: flex;
+		
+		justify-content: center;
 
 		@include atMedium {
-			width: 25%;
-			
+			width: 33.33%;
+			justify-content: flex-end;
+			margin-top: 100px;
 		}
 
-		&--third {
-			width: 100%;
+		&__content-wrapper {
+			text-align: center;
 
-			@media (min-width: 500px) {
-			width: 50%;
-			}
-
-			@include atMedium {
-			width: 30%;
+			@mixin atMedium {
+				width: 280px;
 			}
 		}
 	}
 
-	&__list-content {
-		display: flex;
-		flex-direction: column;
-		padding: 2em;
-		width: 100%;
-		background-color: rgba(#fff, 1);
-		text-align: center;
-		border-radius: 2px;
-		border-top: 2.5px solid rgba($mainBlue, .7);
+/** STYLING RIGHT BLOCK to be flex right on medium and + screens and centered on small screens
+	& created a 2 columns layout on small + screens and 1 column layout on mobile
+ **/
 
-		@include atSmall {
-			padding: 2em;
-		}
+	&__right-block {
+		width: 100%;
+		margin-top: 20px;
+		color: #fff;
 
 		@include atMedium {
-			padding: 1em;
+			width: 58.33%;
 		}
-	}	
 
-	&__list-title {
-		font-weight: 500;
-		margin-bottom: 0;
-		padding-bottom: 10px;
-		font-size: 1.125rem;
-		line-height: 1.1em;
-		letter-spacing: .05em;
-		flex: 1;
-		text-transform: uppercase;
-	}
+		&__row {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
 
-	&__list-txt {
-		flex: 2;
-		font-family: 'Roboto' sans-serif;
-		text-align: center;
-		padding-bottom: 1em;
-		line-height: 1.6em;
-		color: $text;
-	}
+			@include atSmall {
+				flex-direction: row;
+			}
+		}
 
-	&__list-btn {
-		margin-bottom: 10px;
-		background-color: rgba($mainOrange, .9);
+		&__box {
+			background-color: $test;
+			border-radius: 5px;
+			margin-bottom: 1.5em;
+			min-height: 200px;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			margin: .4em;
 
-		&:hover {
-			background-color: #fff;
-			border: 1.5px solid $mainOrange;
-			color: $mainOrange;
-			font-weight: 600;
+			@include atSmall {
+				min-height: 260px;
+				width: 50%;
+			}
+
+			&__headline {
+				padding: 30px 20px;
+				background-color: rgba(#fff, .2);
+				height: 5em;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 5px 5px 0 0;
+			}
+
+			&__title {
+				font-weight: 600;
+				margin: 0;
+				font-size: 1.125rem;
+				line-height: 1.1em;
+				letter-spacing: .05em;
+				text-transform: uppercase;
+				padding-top: 10px;
+			}
+
+			&__txt {
+				font-family: 'Roboto' sans-serif;
+				text-align: justify;
+				line-height: 1.6em;
+				flex: 1;
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+
+			&__btn {		
+				margin-bottom: 20px;
+				margin-right: 20px;
+				display: block;
+				align-self: flex-end;
+				background-color: inherit;
+				border: 1px solid #fff;
+
+				&:hover {
+					background-color: inherit;
+					border: inherit;
+					color: inherit;
+				}
+			}
 		}
 	}
 }
