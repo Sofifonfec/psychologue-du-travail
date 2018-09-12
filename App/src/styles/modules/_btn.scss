@@ -13,6 +13,14 @@
 			border: 1.5px solid #fff;
 	}
 
+// Used for former services section btns
+	&--hover-orange {
+		&:hover {
+			color: $mainOrange;
+			border: 1.5px solid $mainOrange; 
+		}
+	}
+
 	&--do-not-display-until-medium {
 		display: none;
 

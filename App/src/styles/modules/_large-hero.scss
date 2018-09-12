@@ -1,6 +1,6 @@
 .large-hero {
 	position: relative;
-	background: url("../../src/images/large-hero-ow.jpg") no-repeat top center fixed;
+	background: url("../../src/images/large-hero.jpg") no-repeat top center fixed;
 	background-size: cover;
 	height: 70vh;
 	max-width: 100%;
@@ -13,19 +13,22 @@
 
 	&__content {
 		position: absolute;
-		left: 50%;
+		left: 10%;
 		top: 50%;
-		transform: translateX(-50%);
-		width: 100%;
-		text-align: center;
+		transform: translate(-10%, -50%);
+		text-align: justify;
+		max-width: 450px;
 	}
 
 	&__title {
-		font-family: 'Roboto', sans-serif;
+		font-family: 'Roboto Mono', sans-serif;
 		font-weight: 400;
 		margin: 0;
 		font-size: 2rem;
 		letter-spacing: .1em;
+		padding: 20px;
+		margin: 0;
+		padding: 0;
 
 		@include atXSmall {
 			font-size: 2.5rem;
@@ -36,7 +39,11 @@
 		}
 
 		@include atMedium {
-			font-size: 3.5rem;
+			font-size: 3.2rem;
+		}
+
+		&--extra-ls {
+			letter-spacing: .19em;
 		}
 	}
 }

@@ -9,13 +9,12 @@
 			flex-direction: row;
 		}
 
-		&--extra-pb {
-			margin-bottom: 25px;
-		}
-
 		&--extra-pt {
-			margin-top: 25px;
-			border-top: 4px solid $mainBlue;
+			padding-top: 2em;
+
+			@include atXSmall {
+				padding-top: 3.5em;
+			}
 		}
 	}
 
@@ -28,7 +27,7 @@
 		justify-content: center;
 
 		@include atMedium {
-			width: 33.33%;
+			width: 25%;
 			justify-content: flex-end;
 			margin-top: 100px;
 		}
@@ -52,7 +51,7 @@
 		color: #fff;
 
 		@include atMedium {
-			width: 58.33%;
+			width: 65%;
 		}
 
 		&__row {
@@ -66,7 +65,7 @@
 		}
 
 		&__box {
-			background-color: $test;
+			background-color: $mainBlue;
 			border-radius: 5px;
 			margin-bottom: 1.5em;
 			min-height: 200px;
@@ -80,9 +79,12 @@
 				width: 50%;
 			}
 
+			&__3 {
+				background-color: $mainOrange;
+			}	
+
 			&__headline {
 				padding: 30px 20px;
-				background-color: rgba(#fff, .2);
 				height: 5em;
 				display: flex;
 				justify-content: center;
@@ -93,15 +95,18 @@
 			&__title {
 				font-weight: 600;
 				margin: 0;
-				font-size: 1.125rem;
+				font-size: 1rem;
 				line-height: 1.1em;
 				letter-spacing: .05em;
 				text-transform: uppercase;
 				padding-top: 10px;
+
+				@include atXSmall {
+					font-size: 1.125rem;
+				}
 			}
 
 			&__txt {
-				font-family: 'Roboto' sans-serif;
 				text-align: justify;
 				line-height: 1.6em;
 				flex: 1;
@@ -119,7 +124,7 @@
 
 				&:hover {
 					background-color: inherit;
-					border: inherit;
+					
 					color: inherit;
 				}
 			}

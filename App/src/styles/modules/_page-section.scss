@@ -1,11 +1,27 @@
 .page-section {
 	padding: 2rem 0;
 
-	@mixin atXSmall {
+	@include atXSmall {
 		padding: 3.5rem 0;
 	}
 
 	&--blue {
 		background-color: $mainBlue;
+	}
+
+	&--no-pb-until-medium {
+		padding-bottom: 0;
+
+		@include atSmall {
+			padding-bottom: 3.5rem;
+		}
+	}
+
+	&--no-pt-until-medium {
+		padding-top: 0;
+
+		@include atSmall {
+			padding-top: 3.5rem;
+		}
 	}
 }

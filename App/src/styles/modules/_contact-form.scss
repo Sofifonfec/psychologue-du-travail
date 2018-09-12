@@ -1,18 +1,19 @@
 .contact-form {
-	width: 90%;
-	position: relative;
-	left: 50%;
-	transform: translateX(-50%);
+	
 
 	@include atSmall {
-		width: 60%;
+		
 	}
 
 	&__title {
 		font-weight: 500;
 		margin: 0;
-		padding-top: .3em;
-		font-size: 1.215rem;
+		font-size: 1.5rem;
+		padding-bottom: 1rem;
+
+		@include atXSmall {
+			padding-bottom: 2rem;
+		}
 	}
 
 	&__para {
@@ -62,17 +63,18 @@
 
 	&__btn {
 		width: 40%;
-		background: none;
+		background-color: $mainOrange;
 		border: 2px solid $mainOrange;
 		padding: 5px;
 		font-size: 1.125rem;
 		cursor: pointer;
 		margin: 12px 0;
+		color: #fff;
 		transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
 
 		&:hover {
-			background-color: $mainOrange;
-			color: #fff;
+			background: none;
+			color: $text;
 		}
 	}
 }

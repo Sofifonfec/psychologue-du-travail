@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400' rel='stylesheet' type='text/css'>
 
 	<title>Psychologue du travail</title>
 	<meta name="keywords" content="Psychologue du travail, Toulouse, psy, bilan de compétences">
@@ -35,9 +35,9 @@
 
 				<nav class="primary-nav">
 				  	<ul class="primary-nav__list">
-						<li class="primary-nav__list-item"><a class="primary-nav__link" href="#" id="particuliers-link">Espace particuliers</a></li>
-						<li class="primary-nav__list-item"><a class="primary-nav__link" href="#" id="entreprises-link">Espace entreprises</a></li>
-						<li class="primary-nav__list-item"><a class="primary-nav__link" href="about.html" id="about-link">À propos</a></li>
+						<li class="primary-nav__list-item"><a class="primary-nav__link" href="#particuliers" id="particuliers-link">Particuliers</a></li>
+						<li class="primary-nav__list-item"><a class="primary-nav__link" href="#entreprises" id="entreprises-link">Entreprises</a></li>
+						<li class="primary-nav__list-item"><a class="primary-nav__link" href="#about" id="about-link">À propos</a></li>
 				  	</ul>
 				</nav>
 			</div>
@@ -47,23 +47,22 @@
 	<div class="large-hero">
 		<div class="wrapper">
 			<div class="large-hero__content">
-				<h1 class="large-hero__title">Psychologue du Travail</h1>
+				<h1 class="large-hero__title">Psychologue <br><span class="large-hero__title--extra-ls">du Travail</span></h1>
 			</div>
 		</div>
 	</div>
 
-	<div class="services page-section">
+	<div class="services page-section" id="particuliers" data-matching-link="#particuliers-link">
 		<div class="wrapper">
-	<!-- FIRST SECTION -->		
-			<div class="services__container services__container--extra-pb">
-		<!-- 1ST LEFT BLOCK -->		
+<!-- FIRST SECTION -->		
+			<div class="services__container">
+<!-- 1ST LEFT BLOCK -->		
 				<div class="services__left-block">
 					<div class="services__left-block__content-wrapper">
 						<h2 class="section-title section-title--blue">Services aux <span class="section-title--bold">Particuliers</span></h2>
-						<a href="#" class="btn btn--do-not-display-until-medium">En savoir plus</a>
 					</div>
 				</div>
-		<!-- 1ST RIGHT BLOCK -->
+<!-- 1ST RIGHT BLOCK -->
 				<div class="services__right-block">
 					<div class="services__right-block__row">
 						<div class="services__right-block__box">
@@ -100,16 +99,15 @@
 				</div>
 			</div>	
 
-	<!-- SECOND SECTION -->
-			<div class="services__container services__container--extra-pt">
-		<!-- 2ND LEFT BLOCK -->		
+<!-- SECOND SECTION -->
+			<div class="services__container services__container--extra-pt" id="entreprises" data-matching-link="#entreprises-link">
+<!-- 2ND LEFT BLOCK -->		
 				<div class="services__left-block">
 					<div class="services__left-block__content-wrapper">
 						<h2 class="section-title section-title--blue">Services aux <span class="section-title--bold">Entreprises & Organisations</span></h2>
-						<a href="#" class="btn btn--do-not-display-until-medium">En savoir plus</a>
 					</div>
 				</div>
-		<!-- 2ND RIGHT BLOCK -->
+<!-- 2ND RIGHT BLOCK -->
 				<div class="services__right-block">
 					<div class="services__right-block__row">	
 						<div class="services__right-block__box services__right-block__box__3">
@@ -141,7 +139,7 @@
 		</div>	
 	</div>
 
-	<div class="about page-section page-section--blue">
+	<div class="about page-section page-section--blue" id="about" data-matching-link="#about-link">
 		<div class="wrapper">
 			<h2 class="section-title">À propos de moi</h2>
 			<p class="about__para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque doloremque iste praesentium tenetur, non voluptatibus beatae eius ducimus cupiditate vel. Vitae dignissimos esse cupiditate ea natus ullam maxime voluptas explicabo ex repudiandae, ad quas eveniet doloremque maiores voluptates, cum in, provident earum libero! Aliquid aut itaque ab perspiciatis id recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum eos nostrum, minima excepturi consequuntur ducimus.</p>
@@ -152,19 +150,23 @@
 		</div>
 	</div>
 
-	<footer class="footer page-section">
-		<div class="wrapper">
-			<h2 class="section-title section-title--blue" id="contact" data-matching-link="#contact-link">Contact</h2>
-			<div class="footer row">
-				<div class="contact-form row__8">
+	<footer class="footer" id="contact" data-matching-link="#contact-link">
+		<div class="footer__container">
+			<div class="footer__row-4">
+				<div class="footer__row-4__content-wrapper">
+					<h2 class="section-title section-title--bold footer__row-4__title">Contact</h2>
+					<p class="footer__row-4__para">Pour prendre rendez-vous ou pour toute demande d'information, contactez-moi via le formulaire de contact, ou du lundi au vendredi de 9h à 19h au <a href="tel:0611111111" class="footer__row-4__tel">06 11 11 11 11</a>.</p>
+				</div>	
+			</div>
+			<div class="contact-form footer__row-8 page-section page-section--no-pt-until-medium">
+				<div class="footer__row-8__content-wrapper">
 					<form action="" method="">
 						<h3 class="contact-form__title">Formulaire de contact</h3>
-						<p class="contact-form__para">Pour prendre rdv ou pour plus d'information merci de remplir le formulaire ci-dessous ou de me contacter au 06.11.11.11.11</p>
 						<div class="contact-form__textbox">
 							<input class="contact-form__input" type="text" name="name" placeholder="Nom complet">
 						</div>
 						<div class="contact-form__textbox">
-							<input class="contact-form__input" type="text" name="mail" placeholder="Email">
+							<input class="contact-form__input" type="text" name="mail" placeholder="Votre email">
 						</div>
 						<div class="contact-form__textbox">
 							<select class="contact-form__input contact-form__select" name="you are" placeholder="Vous êtes">
@@ -187,19 +189,18 @@
 							</select>
 						</div>
 						<div class="contact-form__msgbox">
-							<textarea class="contact-form__msg" name="message" placeholder="Message"></textarea>
+							<textarea class="contact-form__msg" name="message" placeholder="Votre message"></textarea>
 						</div>
 						<button class="contact-form__btn" type="submit" name="submit">Envoyer</button>
 					</form>	
-				</div>
-
-				<div class="footer__adresse row__4">
-					<h3 class="footer__title">Adresse</h3>
-					<p class="footer__para">3 chemin du petit lapin blanc, 31000 Toulouse</p>
-				</div>
-
+				</div>	
 			</div>
-			<div class="footer__copy">
+		</div>
+
+		<div class="footer__address page-section">
+			<div class="wrapper">
+				<h3 class="footer__title">Adresse</h3>
+				<p class="footer__para">3 chemin du petit lapin blanc, 31000 Toulouse</p>
 				<p class="footer__copy__contact">Adeline Courseille, psychologue du travail à Toulouse, Haute-Garonne. 06.11.11.11.11 | adeline.courseille@psy-toulouse.fr</p>
 				<p>Copyright &copy; 2018 Adeline Courseille. All rights reserves</p>
 			</div>	
