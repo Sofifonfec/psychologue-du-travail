@@ -7,7 +7,8 @@ import ExpandInfo from './modules/ExpandInfo';
 import ExpandInfoEnt from './modules/ExpandInfoEnt';
 
 var mobileMenu = new MobileMenu();
-new RevealOnScroll($(".about__container"), "75%");
+new RevealOnScroll($(".about__item"), "80%");
+new RevealOnScroll($(".about__item--p"), "90%");
 var headerMatchingLinks = new HeaderMatchingLinks();
 var expandInfo = new ExpandInfo();
 var expandInfoEnt = new ExpandInfoEnt();

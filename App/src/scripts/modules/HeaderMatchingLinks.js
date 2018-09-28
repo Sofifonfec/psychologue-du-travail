@@ -30,6 +30,7 @@ class HeaderMatchingLinks {
 	addSmoothScrolling() {
 		this.headerLinks.smoothScroll();
 		this.contactLink.smoothScroll();
+		this.logo.smoothScroll();
 	}
 
 	createHeaderWaypoint() {

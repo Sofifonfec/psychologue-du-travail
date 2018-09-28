@@ -11231,7 +11231,8 @@ var _ExpandInfoEnt2 = _interopRequireDefault(_ExpandInfoEnt);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mobileMenu = new _MobileMenu2.default();
-new _RevealOnScroll2.default((0, _jquery2.default)(".about__container"), "75%");
+new _RevealOnScroll2.default((0, _jquery2.default)(".about__item"), "80%");
+new _RevealOnScroll2.default((0, _jquery2.default)(".about__item--p"), "90%");
 var headerMatchingLinks = new _HeaderMatchingLinks2.default();
 var expandInfo = new _ExpandInfo2.default();
 var expandInfoEnt = new _ExpandInfoEnt2.default();
@@ -11414,6 +11415,7 @@ var HeaderMatchingLinks = function () {
 		value: function addSmoothScrolling() {
 			this.headerLinks.smoothScroll();
 			this.contactLink.smoothScroll();
+			this.logo.smoothScroll();
 		}
 	}, {
 		key: 'createHeaderWaypoint',
@@ -11941,7 +11943,7 @@ var ExpandInfoEnt = function () {
 		_classCallCheck(this, ExpandInfoEnt);
 
 		this.modalOpenEnt = (0, _jquery2.default)(".open-modal-ent");
-		this.modalCloseEnt = (0, _jquery2.default)(".modal__close");
+		this.modalCloseEnt = (0, _jquery2.default)(".modal__close__ent");
 
 		this.events();
 	}

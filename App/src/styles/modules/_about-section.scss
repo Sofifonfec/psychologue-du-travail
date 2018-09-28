@@ -3,7 +3,9 @@
 	&__info {
 		display: block;
 		max-height: 600px;
-		margin: 0 10px 2em 10px;
+		width: 100%;
+		margin-bottom: 2em;
+		padding-top: 20px;
 		background-color: lighten($mainBlue, 50%);
 
 		@include atXSmall {
@@ -21,7 +23,6 @@
 
 		&__picture {
 			margin: auto;
-			padding-top: 10px;
 			max-width: 120px;
 			height: auto;
 			overflow: hidden;

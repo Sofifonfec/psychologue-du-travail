@@ -394,7 +394,8 @@ button:active, button:focus {
       text-align: center;
       display: flex;
       flex-direction: column;
-      margin: .4em; }
+      margin: .4em;
+      transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1); }
       @media (min-width: 760px) {
         .services__right-block__box {
           min-height: 260px;
@@ -445,6 +446,9 @@ button:active, button:focus {
         cursor: pointer;
         transition: all 0.4s cubic-bezier(0.3, 0.1, 0.58, 1);
         z-index: 3; }
+        .services__right-block__box__btn:hover {
+          background-color: #fff;
+          color: #223547; }
 
 .modal {
   box-sizing: border-box;
@@ -510,6 +514,12 @@ button:active, button:focus {
         margin-top: 0; } }
   .modal__para {
     line-height: 1.2em; }
+    .modal__para--italic {
+      font-style: italic; }
+    .modal__para--underlined {
+      border-bottom: 1.5px solid #223547; }
+    .modal__para--list {
+      list-style: disc; }
   .modal__close {
     position: fixed;
     margin-top: 20px;
@@ -533,7 +543,9 @@ button:active, button:focus {
 .about__info {
   display: block;
   max-height: 600px;
-  margin: 0 10px 2em 10px;
+  width: 100%;
+  margin-bottom: 2em;
+  padding-top: 20px;
   background-color: #bcd3e4; }
   @media (min-width: 415px) {
     .about__info {
@@ -548,7 +560,6 @@ button:active, button:focus {
       max-height: 150px; } }
   .about__info__picture {
     margin: auto;
-    padding-top: 10px;
     max-width: 120px;
     height: auto;
     overflow: hidden; }
@@ -612,9 +623,7 @@ button:active, button:focus {
         width: 40%;
         background-color: #d59541;
         padding-top: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center; } }
+        display: flex; } }
     .footer__row-4__content-wrapper {
       padding: 10px 30px;
       margin: auto;
