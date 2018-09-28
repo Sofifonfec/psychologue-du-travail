@@ -1,6 +1,7 @@
 @import 'base/_mixins';
 @import 'base/_variables';
 @import 'base/_global';
+@import 'base/_keyframes';
 @import 'modules/_wrapper';
 @import 'modules/_page-section';
 @import 'modules/_site-header';
@@ -9,6 +10,8 @@
 @import 'modules/_btn';
 @import 'modules/_section-title';
 @import 'modules/_services-section';
+@import 'modules/_modal';
+@import 'modules/_reveal-items';
 @import 'modules/_about-section';
 @import 'modules/_footer';
 @import 'modules/_contact-form';

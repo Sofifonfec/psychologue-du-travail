@@ -1,21 +1,28 @@
 .site-header {
-	position: absolute; 
+	position: fixed; 
 	width: 100%;
-	z-index: 2;
+	z-index: 5;
 	padding: 0;
 	transition: background-color .3s ease-out;
-
+	height: 60px;
+	
 	&--is-expanded {  /* add a semi-transparent background-color when the menu is expanded*/
-		background-color: rgba($mainBlue, .7);
+		background-color: rgba($mainBlue, .95);
+		height: 50%;
+	}
+
+	&--dark {
+		background-color: rgba($mainBlue, .95);
 	}
 
 	@include atMedium {
-		background-color: rgba($mainBlue, .7);
-		position: fixed;
+		background-color: rgba($mainBlue, .8);
 		padding: 10px 0;
+		height: auto;
+		position: fixed;
 
 		&--dark {
-			background-color: rgba(23, 51, 72, .85);
+			background-color: rgba($mainBlue, 1);
 		}
 	}
 
@@ -23,15 +30,23 @@
 		position: absolute;
 		top: 0;
 		left: auto;
-		color: #fff;
+		color: $mainBlue;
 		font-weight: 500;
-		font-size: 1.2rem;
+		font-size: 1.3rem;
 		text-transform: uppercase;
 		padding: 15px 0 0 5px;
 		transition: transform .3s ease-out;
 
 		&--orange {
-			color: $mainOrange;
+			color: lighten($mainOrange, 5%);
+		}
+
+		&--is-expanded {
+			color: #fff;
+		}
+
+		&--dark {
+			color: #fff;
 		}
 
 		@include atXSmall {
@@ -43,6 +58,7 @@
 			top: 50%;
 			transform: translateY(-50%);
 			padding: 0;
+			color: #fff;
 		}
 
 		@include atTiny {
@@ -51,12 +67,18 @@
 	}
 
 	&__btn-container {
-
-		margin-bottom: 10px;
-
+		
 		@include atMedium {
 			float: right;
 			margin-top: 4px;
+			margin-bottom: 4px;
+		}
+
+		&--is-expanded {
+			position: absolute;
+			bottom: 5%;
+			left: 50%;
+			transform: translateX(-50%);
 		}
 	}
 
@@ -67,8 +89,10 @@
 		position: absolute;
 		z-index: 10;
 		top: 20px;
-		right: 20px;
-		
+		right: 35px;
+		cursor: pointer;
+		transform: scale(1.2);
+
 		&::before {
 			content: "";
 			position: absolute;
@@ -76,7 +100,7 @@
 			left: 0;
 			width: 20px;
 			height: 3px;
-			background-color: #FFF;
+			background-color: $mainBlue;
 			transform-origin: 0 0;
 			transition: transform .3s ease-out;
 		}
@@ -87,9 +111,13 @@
 			left: 0;
 			width: 20px;
 			height: 3px;
-			background-color: #FFF;
+			background-color: $mainBlue;
 			transition: all .3s ease-out;
 			transform-origin: 0 50%;
+
+			&--dark {
+				background-color: #fff;
+			}
 		}
 		
 		&::after {
@@ -99,9 +127,21 @@
 			left: 0;
 			width: 20px;
 			height: 3px;
-			background-color: #FFF;
+			background-color: $mainBlue;
 			transform-origin: 0 100%;
 			transition: transform .3s ease-out;
+		}
+
+		&--dark {
+			&::before {
+				background-color: #fff;
+				transition: all .3s ease-out;
+			}
+			
+			&::after {
+				background-color: #fff;
+				transition: all .3s ease-out;
+			}
 		}
 		
 		@include atMedium {
@@ -112,39 +152,50 @@
 	&__menu-icon--close-x {
 		&::before {
 			transform: rotate(45deg) scaleX(1.25);
+			background-color: #fff;
 		}
 		
 		.site-header__menu-icon__middle { 
 			opacity: 0;
 			transform: scaleX(0);
-		}
+			background-color: #fff;
+		}	
 		
 		&::after {
 			transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+			background-color: #fff;
 		}
 	}
 /* ------- END ICON MENU FOR SMALL SCREENS -------------------------- */	
 
 	&__menu-content {
 		opacity: 0;
-		transform: scale(1.2);
-		transition: all .3s ease-out;
+		transition: all .3s ease;
+		transform: translate(0, -100%);
 		position: relative; 
 		z-index: -20;
-		padding-top: 90px;
+		padding-top: 60px;
+		padding-bottom: 70px;
 		text-align: center;
+		visibility: hidden;
+		display: none;
 		
 		@include atMedium {
 			opacity: 1;
 			z-index: 1;
+			visibility: visible;
 			padding-top: 0;
+			padding-bottom: 0;
 			transform: scale(1);
+			display: block;
 		}
 
 		&--is-visible { 
 			opacity: 1;
 			z-index: 1;
+			visibility: visible;
 			transform: scale(1);
+			display: block;
 		}
 	}	
 }

@@ -1,5 +1,6 @@
 .footer {
-
+	box-sizing: border-box;
+	
 	&__container {
 		justify-content: center;
 		width: 100%;
@@ -58,15 +59,24 @@
 
 	&__row-8 {
 		width: 100%;
+		
 
 		@include atSmall {
 			width: 60%;
 		}
 
+		@include atMedium {
+			padding-top: 4rem;
+		}
+
 		&__content-wrapper {
 			max-width: 700px;
-			padding: 10px 30px;
+			padding: 20px 30px 10px 30px;
 			margin: auto;
+
+			@include atSmall {
+				padding: 10px 30px;
+			}
 		}
 	}
 

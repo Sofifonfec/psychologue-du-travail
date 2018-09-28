@@ -17,7 +17,7 @@
 
 		@include atMedium {
 			float: left;
-			padding-right: 20px;
+			padding-right: 25px;
 		}
 	}
 
@@ -25,5 +25,31 @@
 		padding: 12px 0;
 		font-weight: 400;
 		display: block;
+
+		&.is-current-link {
+			color: $mainOrange;
+		}
+
+		&:hover {
+			color: $mainOrange;
+			font-weight: 600;
+		}
+
+		@include atMedium {
+			position: relative;
+
+			&:after {
+				content: "";
+				width: 0;
+				position: absolute;
+				bottom: 5px;
+				left: 0;
+				border-bottom: 2px solid transparent;
+			}
+
+			&:hover:after {
+				animation: animate-nav .3s linear forwards;
+			}
+		}
 	}
 }

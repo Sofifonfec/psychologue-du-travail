@@ -52,101 +52,217 @@
 		</div>
 	</div>
 
-	<div class="services page-section" id="particuliers" data-matching-link="#particuliers-link">
+<!-- SERVICES PARTICULIERS -->
+	<div class="services page-section page-section--no-pb" id="particuliers" data-matching-link="#particuliers-link">
 		<div class="wrapper">
-<!-- FIRST SECTION -->		
-			<div class="services__container">
-<!-- 1ST LEFT BLOCK -->		
-				<div class="services__left-block">
-					<div class="services__left-block__content-wrapper">
-						<h2 class="section-title section-title--blue">Services aux <span class="section-title--bold">Particuliers</span></h2>
-					</div>
-				</div>
-<!-- 1ST RIGHT BLOCK -->
+<!-- TITLE -->
+			<h2 class="section-title section-title--blue">Services aux <span class="section-title--bold">Particuliers</span></h2>		
+			<div class="services__container">	
+<!-- BOXES PARTICULIERS -->
 				<div class="services__right-block">
 					<div class="services__right-block__row">
-						<div class="services__right-block__box">
+						<div class="services__right-block__box" id="parent-1">
 							<div class="services__right-block__box__headline">
 								<h3 class="services__right-block__box__title">Santé au travail</h3>
 							</div>
-							<p class="services__right-block__box__txt">Consultation souffrance au travail: Stress, Usure, Burn Out...</p>
-							<a href="#" class="btn services__right-block__box__btn">Voir plus</a>
+							<p class="services__right-block__box__txt">Consultation souffrance au travail : <br>Stress, Usure, Burn Out...</p>
+							<button class="btn services__right-block__box__btn open-modal-par" type="button" data-id="1" data-text-swap="Voir moins">Voir plus</button>
 						</div>
-						<div class="services__right-block__box">
+		
+						<div class="services__right-block__box" id="parent-2">
 							<div class="services__right-block__box__headline">
-								<h3 class="services__right-block__box__title">Accompagnement emploi</h3>
+								<h3 class="services__right-block__box__title">Bilan de compétences</h3>
 							</div>
-							<p class="services__right-block__box__txt">Rédaction CV, lettre de motivation, préparation d'entretien</p>
-							<a href="#" class="btn services__right-block__box__btn">Voir plus</a>
+							<p class="services__right-block__box__txt">Reconversion, transition, aide au développement d’un projet professionnel…</p>
+							<button class="btn services__right-block__box__btn open-modal-par" type="button" data-id="2" data-text-swap="Voir moins">Voir plus</button>
 						</div>
 					</div>
 					<div class="services__right-block__row">
-						<div class="services__right-block__box">
+						<div class="services__right-block__box" id="parent-3">
 							<div class="services__right-block__box__headline">
-								<h3 class="services__right-block__box__title">Reconversion / transition</h3>
+								<h3 class="services__right-block__box__title">Accompagnement emploi</h3>
 							</div>
-							<p class="services__right-block__box__txt">Conseil carrière, Bilan de compétences</p>
-							<a href="#" class="btn services__right-block__box__btn">Voir plus</a>
+							<p class="services__right-block__box__txt">Rédaction CV, lettre de motivation <br> Utilisation des réseaux sociaux <br>Préparation d’entretien…</p>
+							<button class="btn services__right-block__box__btn open-modal-par" type="button" data-id="3" data-text-swap="Voir moins">Voir plus</button>
 						</div>
-						<div class="services__right-block__box">
+						<div class="services__right-block__box" id="parent-4">
 							<div class="services__right-block__box__headline">
 								<h3 class="services__right-block__box__title">Orientation</h3>
 							</div>
-							<p class="services__right-block__box__txt">Accompagnement des jeunes dans leurs choix d'orientation.</p>
-							<a href="#" class="btn services__right-block__box__btn">Voir plus</a>
+							<p class="services__right-block__box__txt">Accompagnement des jeunes dans leurs choix d'orientation <br>(Collégiens, lycéens, et étudiants)</p>
+							<button class="btn services__right-block__box__btn open-modal-par" type="button" data-id="4" data-text-swap="Voir moins">Voir plus</button>
 						</div>
 					</div>
 				</div>
-			</div>	
-
-<!-- SECOND SECTION -->
-			<div class="services__container services__container--extra-pt" id="entreprises" data-matching-link="#entreprises-link">
-<!-- 2ND LEFT BLOCK -->		
-				<div class="services__left-block">
-					<div class="services__left-block__content-wrapper">
-						<h2 class="section-title section-title--blue">Services aux <span class="section-title--bold">Entreprises & Organisations</span></h2>
+			</div>
+<!-- BOXES DETAILS PARTICULIERS -->	
+			<div class="modal modal__par">
+				<div class="modal__container modal__container__par" id="box-1">
+					<span class="btn btn--hover-orange modal__close modal__close__par">Fermer</span>
+					<div class="modal__txt-wrap">
+						<h2 class="modal__title">SANTE AU TRAVAIL :</h2>
+						<p class="modal__para">Stress, usure, épuisement, burn out … Voilà des « maux » du travail que l’on a de plus en plus souvent à entendre.</p>
+						<p class="modal__para">Quête de sens, difficulté à se reconnaitre dans son activité…</p>
+						<p class="modal__para">Je propose des consultations individuelles afin de prendre le temps de se regarder dans son travail, de faire le point et d’identifier les leviers d’actions, le tout, dans un contexte confidentiel.</p>
+						<p class="modal__para">(Durée d’une séance : 1h)</p>
+						<p class="modal__para">Tarif : 40 euros par séance</p>
+						<p class="modal__para">N’hésitez pas à me joindre directement pour avoir plus d’informations.</p>
 					</div>
 				</div>
-<!-- 2ND RIGHT BLOCK -->
+			
+				<div class="modal__container modal__container__par" id="box-2">
+					<span class="btn btn--hover-orange modal__close modal__close__par">Fermer</span>
+					<div class="modal__txt-wrap">
+						<h2 class="modal__title">RECONVERSION/TRANSITION : </h2>
+						<p class="modal__para">Je propose des prestations de Bilan de compétences dans le cadre :</p>
+						<ul>
+							<li>- De la construction d’un projet professionnel</li>
+							<li>- D’un souhait de reconversion</li>
+							<li>- De la structuration d’une stratégie de mobilité interne </li>
+							<li>- De réalisation d’un point de carrière afin d’identifier et de valoriser les compétences personnelles et professionnelles</li>
+						</ul>
+						<p class="modal__para">Le bilan de compétences comporte trois phases :</p>
+						<ul>
+							<li><span class="underline">Une phase préliminaire :</span> qui a pour objectif de contextualiser et donner du sens à la demande, de définir la problématique de la démarche de bilan. De là, on est en mesure de définir les objectifs et donc la méthodologie à employer.</li>
+							<li><span class="underline">Une phase d’investigation :</span> qui permet d’identifier (à travers des entretiens, travaux ou tests) vos ressources interne et externe, valeurs et motivation, aptitudes personnelles et professionnelles.</li>
+							<li><span class="underline">Une phase de conclusion :</span> qui consiste en une formalisation du plan d’action. Elle permet de recueillir et restituer les données des différentes étapes de travail et d’opérer à des choix.</li>
+						</ul>
+						<p class="modal__para modal__para--extra-pl">Une synthèse récapitulant les éléments du bilan est remise à la fin de celui-ci.</p>
+						<p class="modal__para">N’hésitez pas à me joindre directement pour avoir plus d’informations sur le déroulé du bilan.</p>
+						<p class="modal__para">Le premier rendez-vous de présentation est gratuit.</p>
+						<p class="modal__para">(Durée : 24 heures, 8 rendez-vous)</p>
+						<p class="modal__para">Tarif : Me contacter</p>
+					</div>
+				</div>
+			
+				<div class="modal__container modal__container__par" id="box-3">
+					<span class="btn btn--hover-orange modal__close modal__close__par">Fermer</span>
+					<div class="modal__txt-wrap">
+						<h2 class="modal__title">ACCOMPAGNEMENT EMPLOI :</h2>
+						<p class="modal__para">J’accompagne les personnes dans le cadre d’une recherche d’emploi ou d’un concours sous forme de coaching professionnel :</p>
+						<ul>
+							<li>- Confirmation d’un projet professionnel</li>
+							<li>- Accompagnement à la rédaction de CV et lettres de motivation</li>
+							<li>- Activation de réseaux</li>
+							<li>- Accompagnement au développement des réseaux sociaux professionnels</li>
+							<li>- Préparation aux entretiens</li>
+						</ul>
+						<p class="modal__para">(Durée d’une séance : 1h à 2h selon le besoin)</p>
+						<p class="modal__para">Tarif : 30 euros par séance</p>
+					</div>
+				</div>
+			
+				<div class="modal__container modal__container__par" id="box-4">
+					<span class="btn btn--hover-orange modal__close modal__close__par">Fermer</span>
+					<div class="modal__txt-wrap">
+						<h2 class="modal__title">ORIENTATION :</h2>
+						<p class="modal__para">Selon le fichier ROME (Répertoire Opérationnel des Métiers et des Emplois) de 2018, il existe aujourd’hui près de 11 000 métiers différents… difficile de s’y retrouver et surtout d’anticiper.</p>
+						<p class="modal__para">J’accompagne donc les jeunes (collégiens, lycéens étudiants) via une approche personnalisée selon le besoin de faire le point sur :</p>
+						<p class="modal__para">Le parcours, les intérêts, les éléments de personnalité, l’analyse et l’étude des idées, les représentations…</p>
+						<p class="modal__para">Et d’accompagner lors de la prise de décision, de peser le pour ou le contre et de valider un projet d'orientation professionnelle.</p>
+						<p class="modal__para">(Durée d’une séance : 1h à 2h selon le besoin)</p>
+						<p class="modal__para">Tarif : Me contacter</p>
+					</div>
+				</div>
+			</div>
+<!-- END DETAILS PARTICULIERS-->									
+		</div>
+	</div>			
+
+<!-- SERVICES ENTREPRISES -->
+	<div class="services page-section" id="entreprises" data-matching-link="#entreprises-link">
+		<div class="wrapper">
+<!-- TITLE -->		
+			<h2 class="section-title section-title--blue">Services aux <span class="section-title--bold">Entreprises & Organisations</span></h2>
+			<div class="services__container">
+<!-- BOXES -->
 				<div class="services__right-block">
-					<div class="services__right-block__row">	
-						<div class="services__right-block__box services__right-block__box__3">
+					<div class="services__right-block__row services__right-block__row__3">	
+						<div class="services__right-block__box services__right-block__box__3" id="parent-5">
 							<div class="services__right-block__box__headline">
 								<h3 class="services__right-block__box__title">RPS</h3>
 							</div>
-							<p class="services__right-block__box__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad minus eius, veritatis.</p>
-							<a href="#" class="btn services__right-block__box__btn">Voir plus</a>
+							<p class="services__right-block__box__txt">Evaluation des Risques Psycho-Sociaux (RPS), accompagnement dans une démarche SQVT…</p>
+							<button class="btn services__right-block__box__btn open-modal-ent" type="button" data-id="5" data-text-swap="Voir moins">Voir plus</button>
 						</div>
-						<div class="services__right-block__box services__right-block__box__3">
-							<div class="services__right-block__box__headline">
-								<h3 class="services__right-block__box__title">Recrutement</h3>
-							</div>
-							<p class="services__right-block__box__txt">Aide à chaque étape du processus de recrutement</p>
-							<a href="#" class="btn services__right-block__box__btn">Voir plus</a>
-						</div>
-					</div>	
-					<div class="services__right-block__row">	
-						<div class="services__right-block__box services__right-block__box__3">
+						<div class="services__right-block__box services__right-block__box__3" id="parent-6">
 							<div class="services__right-block__box__headline">
 								<h3 class="services__right-block__box__title">Accompagnement collectif</h3>
 							</div>
-							<p class="services__right-block__box__txt">Animation de groupe: analyse de pratique, groupe d'autoconfrontation croisés</p>
-							<a href="#" class="btn services__right-block__box__btn">Voir plus</a>
+							<p class="services__right-block__box__txt">Animation de groupe : analyse de pratique, groupe d'autoconfrontation croisées.</p>
+							<button class="btn services__right-block__box__btn open-modal-ent" type="button" data-id="6" data-text-swap="Voir moins">Voir plus</button>
+						</div>	
+						<div class="services__right-block__box services__right-block__box__3" id="parent-7">
+							<div class="services__right-block__box__headline">
+								<h3 class="services__right-block__box__title">Recrutement</h3>
+							</div>
+							<p class="services__right-block__box__txt">Aide à chaque étape du processus du recrutement de l’analyse du besoin à l’intégration du candidat.</p>
+							<button class="btn services__right-block__box__btn open-modal-ent" type="button" data-id="7" data-text-swap="Voir moins">Voir plus</button>
 						</div>
 					</div>
 				</div>
+			</div>
+<!-- BOXES DETAILS ENTREPRISES -->	
+			<div class="modal modal__ent">
+				<div class="modal__container modal__container__ent" id="box-5">
+					<span class="btn btn--blue modal__close modal__close__ent">Fermer</span>
+					<div class="modal__txt-wrap">
+						<h2 class="modal__title">Evaluation des Risques Psycho-Sociaux :</h2>
+						<p class="modal__para">Je propose d’accompagner les organisations en matière de santé au travail :</p>
+						<ul>
+							<li>- Identification des facteurs de risques</li>
+							<li>- Evaluation des Risques Psycho-Sociaux</li>
+							<li>- Préconisation</li>
+							<li>- Mise en accord d’un plan d’action en lien avec une démarche de Santé et Qualité de Vie au Travail</li>
+						</ul>
+						<p class="modal__para">(Durée : 4 à 6 mois)</p>
+						<p class="modal__para">Tarif : Me contacter</p>
+					</div>
+				</div>
+			
+				<div class="modal__container modal__container__ent" id="box-6">
+					<span class="btn btn--blue modal__close modal__close__ent">Fermer</span>
+					<div class="modal__txt-wrap">
+						<h2 class="modal__title">Accompagnement collectif :</h2>
+						<p class="modal__para">Dans le cadre d’une démarche de redéfinition des métiers (pour un projet de dématérialisation par exemple), de développement des compétences, de Santé et Qualité de Vie au Travail ou d’innovation, je propose d’animer des groupes d’analyse du travail.</p>
+						<p class="modal__para">Selon le besoin, ceux-ci peuvent prendre forme de groupe d’analyse de pratiques, de groupes d’auto-confrontations croisées ou d’instruction aux sosies.</p>
+						<p class="modal__para">Tarif : Me contacter</p>
+					</div>
+				</div>
+			
+				<div class="modal__container modal__container__ent" id="box-7">
+					<span class="btn btn--blue modal__close modal__close__ent">Fermer</span>
+					<div class="modal__txt-wrap">
+						<h2 class="modal__title">Recrutement :</h2>
+						<p class="modal__para">Je propose des prestations de consultance pour les organisations souhaitant affiner l’ensemble ou une partie de leur(s) procédure(s) de recrutement :</p>
+						<ul>
+							<li>- Analyse du besoin, sourcing, évaluation, passation de tests, sélection et suivi de l’intégration du candidat.</li>
+						</ul>
+						<p class="modal__para">•	Un poste spécifique à pourvoir ? Je propose également des prestations de recrutement.</p>
+						<p class="modal__para">Tarif : Me contacter</p>
+					</div>
+				</div>
 			</div>	
+<!-- END DETAILS ENTREPRISES -->							
 		</div>	
 	</div>
 
 	<div class="about page-section page-section--blue" id="about" data-matching-link="#about-link">
-		<div class="wrapper">
+		<div class="wrapper about__container">
 			<h2 class="section-title">À propos de moi</h2>
-			<p class="about__para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque doloremque iste praesentium tenetur, non voluptatibus beatae eius ducimus cupiditate vel. Vitae dignissimos esse cupiditate ea natus ullam maxime voluptas explicabo ex repudiandae, ad quas eveniet doloremque maiores voluptates, cum in, provident earum libero! Aliquid aut itaque ab perspiciatis id recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum eos nostrum, minima excepturi consequuntur ducimus.</p>
-			<p class="about__para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque doloremque iste praesentium tenetur, non voluptatibus beatae eius ducimus cupiditate vel. Vitae dignissimos esse cupiditate ea natus ullam maxime voluptas.</p>
-			<div class="about__btn-container">
-				<a href="#" class="btn">En savoir plus</a>
+			<div class="about__info">
+				<div class="about__info__picture"><img src="/src/images/profile-picture.png" alt="Photo Adeline Courseille" class="pic">
+				</div>
+				<div class="about__info__details">
+					<h2 class="about__info__details__name">Adeline Courseille</h2>
+					<p class="about__info__details__para about__info__details__para--bold">Psychologue du travail Indépendante</p>
+					<p class="about__info__details__para">N° ADELI (recensement ARS) : 319328233</p>
+					<p class="about__info__details__para about__info__details__para--last">N° SIRET : 840 521 900 00018</p> 
+				</div>
 			</div>
+			<p class="about__para">Issue d’un Master 2 de Psychologie du Travail et des Organisations à l’Université de Bordeaux, j’accompagne les particuliers et les organisations d’Occitanie ayant des besoins liés à la santé au travail, l’accompagnement individuel et de groupe, la reconversion, l’orientation, l’insertion professionnelle et le recrutement.</p>
+			<p class="about__para">De nature ouverte et attentive, j’aime porter mon écoute, mon aide et mon soutien aux personnes dans leur désir de rebondir. Je ne me pose pas en situation d’expert mais bel et bien en situation d’accompagnant.</p>
+			<p class="about__para">Curieuse de toutes les pratiques qui touchent à la santé, j’apprécie pouvoir élargir mes potentialités d’action afin de construire des méthodes qui soient adaptées au besoin des personnes, des organisations et de leur contexte.</p>
 		</div>
 	</div>
 
@@ -155,12 +271,12 @@
 			<div class="footer__row-4">
 				<div class="footer__row-4__content-wrapper">
 					<h2 class="section-title section-title--bold footer__row-4__title">Contact</h2>
-					<p class="footer__row-4__para">Pour prendre rendez-vous ou pour toute demande d'information, contactez-moi via le formulaire de contact, ou du lundi au vendredi de 9h à 19h au <a href="tel:0611111111" class="footer__row-4__tel">06 11 11 11 11</a>.</p>
+					<p class="footer__row-4__para">Pour prendre rendez-vous ou pour toute demande d'information, contactez-moi via le formulaire de contact, ou du lundi au vendredi de 9h à 20h au <a href="tel:0621844537" class="footer__row-4__tel">06 21 84 45 37</a>.</p>
 				</div>	
 			</div>
 			<div class="contact-form footer__row-8 page-section page-section--no-pt-until-medium">
 				<div class="footer__row-8__content-wrapper">
-					<form action="" method="">
+					<form action="contact-form.php" method="post">
 						<h3 class="contact-form__title">Formulaire de contact</h3>
 						<div class="contact-form__textbox">
 							<input class="contact-form__input" type="text" name="name" placeholder="Nom complet">
@@ -169,22 +285,19 @@
 							<input class="contact-form__input" type="text" name="mail" placeholder="Votre email">
 						</div>
 						<div class="contact-form__textbox">
-							<select class="contact-form__input contact-form__select" name="you are" placeholder="Vous êtes">
-								<option value="" selected="selected" disabled="disabled">Vous êtes</option>
-								<option class="contact-form__option" value="entreprise">Une entreprise / organisation</option>
-								<option class="contact-form__option" value="particulier">Un particulier</option>
-							</select>
-						</div>
-						<div class="contact-form__textbox">
 							<select class="contact-form__input contact-form__select" name="subject" placeholder="Sujet">
 								<option value="" selected="selected" disabled="disabled">Sujet</option>
-								<option class="contact-form__option" value="sante au travail">Santé au travail</option>
-								<option class="contact-form__option" value="accompagnement emploi">Accompagnement Emploi</option>
-								<option class="contact-form__option" value="reconversion">Reconversion</option>
-								<option class="contact-form__option" value="orientation">Orientation</option>
-								<option class="contact-form__option" value="rps">RPS</option>
-								<option class="contact-form__option" value="recrutement">Recrutement</option>
-								<option class="contact-form__option" value="accompagnement collectif">Accompagnement collectif</option>
+								<optgroup label="Particuliers">
+									<option class="contact-form__option" value="sante au travail">Santé au travail</option>
+									<option class="contact-form__option" value="reconversion">Bilan de compétences</option>
+									<option class="contact-form__option" value="accompagnement emploi">Accompagnement Emploi</option>
+									<option class="contact-form__option" value="orientation">Orientation</option>
+								</optgroup>
+								<optgroup label="Entreprises/Org.">
+									<option class="contact-form__option" value="rps">RPS</option>
+									<option class="contact-form__option" value="recrutement">Recrutement</option>
+									<option class="contact-form__option" value="accompagnement collectif">Accompagnement collectif</option>
+								</optgroup>
 								<option class="contact-form__option" value="autre">Autre</option>
 							</select>
 						</div>
@@ -197,11 +310,9 @@
 			</div>
 		</div>
 
-		<div class="footer__address page-section">
+		<div class="footer__address page-section page-section--less-padding">
 			<div class="wrapper">
-				<h3 class="footer__title">Adresse</h3>
-				<p class="footer__para">3 chemin du petit lapin blanc, 31000 Toulouse</p>
-				<p class="footer__copy__contact">Adeline Courseille, psychologue du travail à Toulouse, Haute-Garonne. 06.11.11.11.11 | adeline.courseille@psy-toulouse.fr</p>
+				<p class="footer__copy__contact">Adeline Courseille, psychologue du travail à Toulouse, Haute-Garonne. 06.21.84.45.37 | contact@courseille-psy.fr</p>
 				<p>Copyright &copy; 2018 Adeline Courseille. All rights reserves</p>
 			</div>	
 		</div>

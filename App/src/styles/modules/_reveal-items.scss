@@ -1,0 +1,9 @@
+.reveal-item {
+	opacity: 0;
+}
+
+.reveal-item--is-visible {
+	opacity: 1;
+	position: relative;
+	animation: header-about .9s forwards;
+}

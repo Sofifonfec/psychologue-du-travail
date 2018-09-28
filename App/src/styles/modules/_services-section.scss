@@ -3,41 +3,11 @@
 	&__container {
 		display: flex;
 		flex-direction: column;
+		position: relative;
 
 		@include atMedium {
 			justify-content: space-between;
 			flex-direction: row;
-		}
-
-		&--extra-pt {
-			padding-top: 2em;
-
-			@include atXSmall {
-				padding-top: 3.5em;
-			}
-		}
-	}
-
-/** STYLING LEFT BLOCK to be flex left on medium and + screens and top centered on small screens **/
-
-	&__left-block {
-		width: 100%;
-		display: flex;
-		
-		justify-content: center;
-
-		@include atMedium {
-			width: 25%;
-			justify-content: flex-end;
-			margin-top: 100px;
-		}
-
-		&__content-wrapper {
-			text-align: center;
-
-			@mixin atMedium {
-				width: 280px;
-			}
 		}
 	}
 
@@ -51,7 +21,7 @@
 		color: #fff;
 
 		@include atMedium {
-			width: 65%;
+			display: flex;
 		}
 
 		&__row {
@@ -61,6 +31,7 @@
 
 			@include atSmall {
 				flex-direction: row;
+				width: 100%;
 			}
 		}
 
@@ -79,8 +50,24 @@
 				width: 50%;
 			}
 
+			&--is-active {
+				@include atMedium {
+					transform: scale(1.055);
+					border-radius: 2px;
+					background-color: darken($mainBlue, 10%);
+				}
+			}
+
 			&__3 {
 				background-color: $mainOrange;
+
+				&--is-active {
+					@include atMedium {
+						transform: scale(1.045);
+						border-radius: 2px;
+						background-color: darken($mainOrange, 10%);
+					}
+				}
 			}	
 
 			&__headline {
@@ -107,7 +94,7 @@
 			}
 
 			&__txt {
-				text-align: justify;
+				text-align: left;
 				line-height: 1.6em;
 				flex: 1;
 				padding-left: 30px;
@@ -120,12 +107,13 @@
 				display: block;
 				align-self: flex-end;
 				background-color: inherit;
-				border: 1px solid #fff;
+				border: 1.5px solid #fff;
+				cursor: pointer;
+				transition: all 0.4s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+				z-index: 3;
 
 				&:hover {
-					background-color: inherit;
 					
-					color: inherit;
 				}
 			}
 		}

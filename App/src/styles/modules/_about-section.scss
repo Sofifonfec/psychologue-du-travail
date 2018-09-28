@@ -1,4 +1,73 @@
 .about {
+
+	&__info {
+		display: block;
+		max-height: 600px;
+		margin: 0 10px 2em 10px;
+		background-color: lighten($mainBlue, 50%);
+
+		@include atXSmall {
+			max-width: 450px;
+			max-height: 140px;
+			display: flex;
+			margin: 0 auto 2em auto;
+			padding: 0;
+		}                                                                                                                                                                                                                                                                              ;
+		
+		@include atSmall {
+			max-width: 500px;
+			max-height: 150px;
+		}
+
+		&__picture {
+			margin: auto;
+			padding-top: 10px;
+			max-width: 120px;
+			height: auto;
+			overflow: hidden;
+
+			@include atXSmall {
+				margin: 0 10px 0 0;
+				padding: 0;
+				max-width: 140px;
+			}
+		}
+
+		&__details {
+			line-height: 1em;
+			padding: 0 10px 5px 10px;
+			text-align: center;
+
+			@include atXSmall {
+				padding: 5px;
+				margin: 0;
+				line-height: 1.1em;
+				width: auto;
+				text-align: left;
+			}
+
+			&__name {
+				font-size: 1em;
+
+				@include atSmall {
+					font-size: 1.2em;
+				}
+			}
+
+			&__para {
+				font-size: .8em;
+
+				@include atSmall {
+					font-size: .9em;
+				}
+
+				&--bold {
+					font-weight: 600;
+				}
+			}
+		}
+	}
+
 	&__para {
 		color: #fff;
 		text-align: justify;
@@ -7,13 +76,12 @@
 		margin-right: 10px;
 
 		@include atSmall {
-			line-height: 1.875em;
+			line-height: 1.6em;
 			font-size: 1.125rem;
 		}
 	}
+}
 
-	&__btn-container {
-		text-align: center;
-		padding-top: 3em;
-	}
+.pic {
+	background: cover;
 }

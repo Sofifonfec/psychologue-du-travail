@@ -1,6 +1,6 @@
 .large-hero {
 	position: relative;
-	background: url("../../src/images/large-hero.jpg") no-repeat top center fixed;
+	background: url("../../src/images/large-hero-480.jpg") no-repeat top center fixed;
 	background-size: cover;
 	height: 70vh;
 	max-width: 100%;
@@ -9,26 +9,40 @@
 
 	@include atXSmall {
 		height: 80vh;
+		background: url("../../src/images/large-hero-740.jpg") no-repeat top center fixed;
+	}
+
+	@include atSmall {
+		background: url("../../src/images/large-hero-1024.jpg") no-repeat top center fixed;
+	}
+
+	@include atLarge {
+		background: url("../../src/images/large-hero-1800.jpg") no-repeat top center fixed;
 	}
 
 	&__content {
 		position: absolute;
-		left: 10%;
+		left: 50%;
 		top: 50%;
-		transform: translate(-10%, -50%);
+		transform: translate(-50%, -50%);
 		text-align: justify;
-		max-width: 450px;
+
+		@include atMedium {
+			left: 10%;
+			top: 50%;
+			transform: translate(-10%, -50%);
+			max-width: 450px;
+		}
 	}
 
 	&__title {
 		font-family: 'Roboto Mono', sans-serif;
 		font-weight: 400;
-		margin: 0;
 		font-size: 2rem;
-		letter-spacing: .1em;
-		padding: 20px;
+		letter-spacing: .08em;
 		margin: 0;
 		padding: 0;
+		text-shadow: 1px 0 3px #fff;
 
 		@include atXSmall {
 			font-size: 2.5rem;
@@ -40,10 +54,15 @@
 
 		@include atMedium {
 			font-size: 3.2rem;
+			padding: 20px;
 		}
 
 		&--extra-ls {
-			letter-spacing: .19em;
+			letter-spacing: .12em;
+
+			@include atSmall {
+				letter-spacing: .16em;
+			}
 		}
 	}
 }

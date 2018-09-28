@@ -1,0 +1,21 @@
+@keyframes animate-nav {
+	0% {
+		width: 0;
+		border-bottom: 2px solid transparent;
+	}
+
+	100% {
+		width: 100%;
+		border-bottom: 2px solid #fff;
+	}
+}
+
+@keyframes header-about {
+	0% {
+		left: -1000px;
+	}
+
+	100% {
+		left: 0;
+	}
+}

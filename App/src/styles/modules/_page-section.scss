@@ -24,4 +24,12 @@
 			padding-top: 3.5rem;
 		}
 	}
+
+	&--no-pb {
+		padding-bottom: 0;
+	}
+
+	&--less-padding {
+		padding: 1rem 0;
+	}
 }

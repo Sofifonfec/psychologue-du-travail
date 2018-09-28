@@ -21,6 +21,16 @@
 		}
 	}
 
+	&--blue {
+		background-color: $mainBlue;
+		border: 1.5px solid $mainBlue;
+
+		&:hover {
+			color: $mainBlue;
+			border: 1.5px solid $mainBlue; 
+		}
+	}
+
 	&--do-not-display-until-medium {
 		display: none;
 

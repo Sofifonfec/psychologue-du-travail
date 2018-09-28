@@ -22,6 +22,10 @@ gulp.task('watch', function() {
 	watch('./App/src/scripts/**/*.js', function() {
 		gulp.start('scriptsRefresh');
 	});
+
+	watch('./App/src/contact-form.php', function() {
+		browserSync.reload();
+	});
 });
 
 gulp.task('cssInject', ['styles'], function() {
