@@ -8,6 +8,9 @@
 		color: #fff;
 
 		&__success {
+			width: 100%;
+			text-align: center;
+			padding: 10px;
 			background-color: $success;
 			color: #111;
 		}

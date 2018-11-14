@@ -497,7 +497,7 @@ button:active, button:focus {
   .modal__txt-wrap {
     box-sizing: border-box;
     width: 80%;
-    margin: 0 auto;
+    margin: 1.25em auto 0 auto;
     padding: 20px 0;
     transition: all .4s ease;
     transform-origin: center; }
@@ -505,10 +505,11 @@ button:active, button:focus {
       .modal__txt-wrap {
         width: 100%;
         margin: 0;
-        padding: 0; } }
+        padding-top: .625em; } }
   .modal__title {
     font-size: 1.1rem;
-    margin-top: 60px; }
+    margin-top: 60px;
+    text-transform: uppercase; }
     @media (min-width: 950px) {
       .modal__title {
         margin-top: 0; } }
@@ -522,7 +523,7 @@ button:active, button:focus {
       list-style: disc; }
   .modal__close {
     position: fixed;
-    margin-top: 20px;
+    margin-top: 2.1875em;
     margin-left: 50%;
     transform: translateX(-50%);
     cursor: pointer; }
@@ -672,6 +673,9 @@ button:active, button:focus {
   background-color: #ff6b6b;
   color: #fff; }
   .contact-form__alert__success {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
     background-color: #55E6C1;
     color: #111; }
 

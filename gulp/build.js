@@ -11,13 +11,13 @@ gulp.task('previewDist', function() {
 	browserSync.init({ 
 		notify: false,      
 		server: {
-			baseDir: "docs"
+			baseDir: "dist"
 		}
 	});
 });
 
 gulp.task('deleteDistFolder', function() {
-	return del('./docs');
+	return del('./dist');
 });
 
 // task to copy images to dist folder
@@ -28,7 +28,7 @@ gulp.task('optimizeImages', ['deleteDistFolder'], function() {
 			interlaced: true,
 			multipass: true
 		}))
-		.pipe(gulp.dest('./docs/src/images'));
+		.pipe(gulp.dest('./dist/src/images'));
 });
 
 // task to copy styles and scripts to dist folder
@@ -38,7 +38,12 @@ gulp.task('usemin', ['deleteDistFolder', 'styles', 'scripts'], function() {
 			css: [function() {return rev()}, function() {return cssnano()}],
 			js: [function() {return rev()}, function() {return uglify()}]
 		}))
-		.pipe(gulp.dest('./docs'));
+		.pipe(gulp.dest('./dist'));
 });
 
-gulp.task('build', ['deleteDistFolder', 'optimizeImages', 'usemin']);
+gulp.task('php', ['deleteDistFolder'], function() {
+	return gulp.src('./App/src/php/*.php')
+		.pipe(gulp.dest('./dist/src/php'));
+});
+
+gulp.task('build', ['deleteDistFolder', 'optimizeImages', 'usemin', 'php']);

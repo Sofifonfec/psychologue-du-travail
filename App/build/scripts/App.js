@@ -11267,6 +11267,7 @@ var MobileMenu = function () {
 		this.menuContent = (0, _jquery2.default)(".site-header__menu-content");
 		this.logo = (0, _jquery2.default)(".site-header__logo");
 		this.btn = (0, _jquery2.default)(".site-header__btn-container");
+		this.navLinks = (0, _jquery2.default)(".close-mobile-menu");
 		this.events();
 	}
 
@@ -11274,6 +11275,7 @@ var MobileMenu = function () {
 		key: "events",
 		value: function events() {
 			this.menuIcon.click(this.toggleTheMenu.bind(this));
+			this.navLinks.click(this.closeTheMenu.bind(this));
 		}
 	}, {
 		key: "toggleTheMenu",
@@ -11283,6 +11285,15 @@ var MobileMenu = function () {
 			this.logo.toggleClass("site-header__logo--is-expanded");
 			this.btn.toggleClass("site-header__btn-container--is-expanded");
 			this.menuIcon.toggleClass("site-header__menu-icon--close-x");
+		}
+	}, {
+		key: "closeTheMenu",
+		value: function closeTheMenu() {
+			this.menuContent.removeClass("site-header__menu-content--is-visible");
+			this.siteHeader.removeClass("site-header--is-expanded");
+			this.logo.removeClass("site-header__logo--is-expanded");
+			this.btn.removeClass("site-header__btn-container--is-expanded");
+			this.menuIcon.removeClass("site-header__menu-icon--close-x");
 		}
 	}]);
 

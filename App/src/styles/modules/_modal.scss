@@ -63,7 +63,7 @@
 	&__txt-wrap {
 		box-sizing: border-box;
 		width: 80%;
-		margin: 0 auto;
+		margin: 1.25em auto 0 auto;
 		padding: 20px 0;
 		transition: all .4s ease;
 		transform-origin: center;
@@ -71,13 +71,14 @@
 		@include atMedium {
 			width: 100%;
 			margin: 0;
-			padding: 0;
+			padding-top: .625em;
 		}
 	}
 
 	&__title {
 		font-size: 1.1rem;
 		margin-top: 60px;
+		text-transform: uppercase;
 
 		@include atMedium {
 			margin-top: 0;
@@ -102,7 +103,7 @@
 
 	&__close {
 		position: fixed;
-		margin-top: 20px;
+		margin-top: 2.1875em;
 		margin-left: 50%;
 		transform: translateX(-50%);
 		cursor: pointer;

@@ -11,13 +11,9 @@
 	<meta name="keywords" content="Psychologue du travail, Toulouse, psy, bilan de compétences, souffrance au travail, santé, emploi, orientation, reconversion, stress, burn-out, insertion, développement, Ramonville, Blagnac, QVT, RPS, recrutement, coaching">
 	<meta name="description" content="Psychologue du travail à Toulouse pour particuliers, entreprises et organisations.">
 
-	<!-- build:css src/styles/styles.css -->
-	<link rel="stylesheet" href="build/styles/styles.css">
-	<!-- endbuild -->
+	<link rel="stylesheet" href="src/styles/styles-8dccc37447.css"/>
 
-	<!-- build:js src/scripts/Vendor.js -->
-	<script src="build/scripts/Vendor.js"></script>
-	<!-- endbuild -->
+	<script src="src/scripts/Vendor-67a25d9b82.js"></script>
 
 </head>
 <body>
@@ -329,9 +325,7 @@
 		</div>
 	</footer>
 	
-	<!-- build:js src/scripts/App.js -->
-	<script src="build/scripts/App.js"></script>
-	<!-- endbuild -->
+	<script src="src/scripts/App-4b473b03bd.js"></script>
 
 </body>
 </html>
